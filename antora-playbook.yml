@@ -1,6 +1,6 @@
 site:
   title: Entropie Docs 
-  start_page: component-b::index.adoc
+  start_page: entropie-docs-source::index.adoc
 content:
   sources:
   - url: https://gitlab.com/antora/demo/demo-component-a.git
@@ -8,6 +8,9 @@ content:
   - url: https://gitlab.com/antora/demo/demo-component-b.git
     branches: [v2.0, v1.0]
     start_path: docs
+  - url: https://github.com/treemcgee42/entropie-docs-source.git
+    start_path: docs
+    branches: HEAD
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable

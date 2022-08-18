@@ -1,0 +1,4 @@
+name: test-tree
+version: 1
+nav:
+- modules/ROOT/nav.adoc
