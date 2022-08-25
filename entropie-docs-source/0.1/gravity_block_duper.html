@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gravity block duper :: Entropie Docs</title>
+    <meta name="generator" content="Antora 3.0.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">Entropie Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="entropie-docs-source" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">entropie-docs-source</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Farms</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="enderman_farm.html">enderman farm</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="gravity_block_duper.html">gravity block duper</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">entropie-docs-source</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../component-a/1.5.6/inline-text-formatting.html">Component A</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../component-a/1.5.6/inline-text-formatting.html">1.5.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../component-b/2.0/index.html">Component B</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../component-b/2.0/index.html">2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../component-b/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">entropie-docs-source</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">entropie-docs-source</a></li>
+    <li>Farms</li>
+    <li><a href="gravity_block_duper.html">gravity block duper</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/treemcgee42/entropie-docs-source/edit/main/docs/modules/ROOT/pages/gravity_block_duper.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Gravity block duper</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use this farm if you want to dupe a full block that is affected by gravity, such as sand or concrete powder. This guide will also describe how to enable automatic concrete creation, since it is directly connected to the duping mechanism.</p>
+</div>
+<div class="paragraph">
+<p>Regardless of the block being duped, it is necessary to set up things in both the <code>Overworld</code> and <code>End</code>. The <code>Overworld</code> component is in a spawn chunk so it doesn&#8217;t need to be explicitly loaded, but the <code>End</code> component needs to be loaded while in use, such as by a player standing by it.</p>
+</div>
+<div class="paragraph">
+<p><em>Though this farm is technically able to handly any gravity block, it is currently not configured to handle (store) anything other than sand and concrete powder.</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overworld_setup"><a class="anchor" href="#_overworld_setup"></a>Overworld setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>Overworld</code> component is housed in a tall, white building by spawn, whose entrance is at <code>x: 220, y: 69, z: -212</code>.</p>
+</div>
+<div class="paragraph">
+<p>Before entering, take a look on top of the building. If there is a beacon light coming out of it, then the component is currently configured to duplicate concrete powder, make it into concrete, and blow it up. If there is no beacon light, then it is configured for generic gravity block duplication. While it should be configured for generic gravity block duplication by default, you must verify this, as the previous user could have forgotten to restore the default setting.</p>
+</div>
+<div class="paragraph">
+<p>To change the mode (and also the beacon light), interact once with the <code>note block</code> at <code>x: 221, y: 80, z: -227</code>.</p>
+</div>
+<div class="paragraph">
+<p>If you want to dupe generic gravity blocks, then all you need to do is make sure the system is configured correctly (beacon light off). If you want to duplicate concrete powder <em>and</em> convert it into concrete automatically, continue to the following subsection.</p>
+</div>
+<div class="sect2">
+<h3 id="_concrete_configuration"><a class="anchor" href="#_concrete_configuration"></a>Concrete configuration</h3>
+<div class="paragraph">
+<p>It is a good idea to take a schematic of the component before using it, given how many things can break. In particular, the stuff around <code>x: 232, y: 80, z: -217</code> is particularly prone to breaking (at least take a schematic of this part).</p>
+</div>
+<div class="paragraph">
+<p>First, you need to check that the four "observer-piston towers" are pushed down. Each has a <code>piston</code> on the bottom and on the top of the tower, and by "pushed down" we mean there is a gap between the top <code>piston</code> and the <code>observer</code> below it. The exact locations of these towers are as follows (we provide the location of the bottom <code>piston</code> of the tower):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>x: 217, y: 90, z: -215</code></p>
+</li>
+<li>
+<p><code>x: 218, y: 80, z: -215</code></p>
+</li>
+<li>
+<p><code>x: 230, y: 80, z: -215</code></p>
+</li>
+<li>
+<p><code>x: 231, y: 89, z: -215</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Next, you need to go check out the <code>slime blocks</code> at <code>x: 225, y: 80, z: -223</code> and <code>x: 223, y: 80, z: -222</code>. If there is a gravity block (from a previous duplication run) on top of these blocks, you need to destroy those (gravity) blocks (do not destroy the `slime block`s).</p>
+</div>
+<div class="paragraph">
+<p>If you have done these steps, you have properly configured the farm for <code>concrete powder</code> duplication and subsequent <code>concrete</code> conversion.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_end_setup"><a class="anchor" href="#_end_setup"></a>End setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>End</code> setup is relatively simple. Be sure to bring 20 of the blocks you wish to duplicate (<code>concrete powder</code> if you want to make concrete). The configuration in the <code>End</code> is the same whether you are doing <code>concrete</code> or generic gravity block duplication.</p>
+</div>
+<div class="paragraph">
+<p>Head to the main central portal back to the <code>Overworld</code>, and place the blocks you want to duplicate around it. Precise locations are (if it isn&#8217;t clear)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[{x: -4, y: 61, z: -1}, {x: -4, y: 61, z: 0}, {x: -4, y: 61, z: 1}, {x: -3, y: 61, z: 2}, {x: -2, y: 61, z: 3}, {x: -1, y: 61, z: 4}, {x: 0, y: 61, z: 4}, {x: 1, y: 61, z: 4}, {x: 2, y: 61, z: 3}, {x: 3, y: 61, z: 2}, {x: 4, y: 61, z: 1}, {x: 4, y: 61, z: 0}, {x: 4, y: 61, z: -1}, {x: 3, y: 61, z: -2}, {x: 2, y: 61, z: -3}, {x: 1, y: 61, z: -4}, {x: 0, y: 61, z: -4}, {x: -1, y: 61, z: -4}, {x: -2, y: 61, z: -3}, {x: -3, y: 61, z: -2}]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There may be gravity blocks already there from a previous duplication run. You can just remove those and put your own if you like.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once you have configured everything, you can activate the duper by pressing the button at <code>x: -8, y: 63, z: 0</code>. The end chunk with the duper must remain loaded, so either you or someone else must stay there while in operation. The same button will stop the farm.</p>
+</div>
+<div class="paragraph">
+<p>If you are duplicating concrete powder, they need not all be the same color, regardless of if you are duping powder or also converting it to concrete.</p>
+</div>
+<div class="paragraph">
+<p>Read the next section to see where to pick up your items.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_item_storage"><a class="anchor" href="#_item_storage"></a>Item storage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every block is packed into shulker boxes before they are sent to storage and are accessible.</p>
+</div>
+<div class="paragraph">
+<p>Sand and concrete will be sent to the Bauhaus, at approximately <code>x: 140, y: 69, z: -272</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Todo: include info on how to refill shulker boxes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Concrete will be sent to the ship. Stand at <code>x: 181, y: 76, z: -132</code> and press the button to go down. Take what you need from the corresponding chests. To get out, face the wall while standing at <code>x: 183, y: 68, z: -132</code>, look straight up, and throw an ender pearl.</p>
+</div>
+<div class="paragraph">
+<p>To refill shulker boxes for this concrete storage, add shulker boxes to the chest at around <code>x: 180, y: 69, z: -212</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_notes"><a class="anchor" href="#_additional_notes"></a>Additional notes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>In the overworld component, when blowing up concrete, don&#8217;t be surprised if the first batch of concrete powder falls through as items.</p>
+</li>
+<li>
+<p>Try to check with freecam inside the blast chambers while blowing concrete up, just to make sure everything is working properly.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
